@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>IndexedDB</title>
+    <script src="../Script_jQuery/jQuery-3.1.1.min.js"></script>
+    <script src="../All_Java_js/IndexedDB.js"></script>
+    <script src="../All_Java_js/DragAndDrop.js"></script>
+    <link href="../All_Storage_css/Local_Session_IndexedDB.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+    <div class="hero">
+        <nav id="menu1">
+            <div id="img">
+                <h2>C-SHARP<img src="../Image_all/1.jpg" width="110" height="70" /></h2>
+            </div>
+            <ul>
+                <li><a href="LayOut.html">Home Page</a></li>
+                <li><a href="LocalStorage.html">local Storage</a></li>
+                <li><a href="SessionStorage.html">Session Storage</a></li>
+                <li><a href="IndexedDB.html">Indexed_DB</a></li>
+                <li><a href="#">Web_SQL</a></li>
+                <li><a href="AboutMe.html">About me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="container">
+        <header>
+            <hgroup id="headerText">
+                <h1>IndexedDB Storage form</h1>
+            </hgroup>
+        </header>
+        <div role="main" id="main">
+            
+            <div id="editContact"  style="background-color:lightslategray">
+                <h2 id="currentAction"></h2>
+                <div>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="firstName" />
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" name="lastName" />
+                </div>
+
+                <div>
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" />
+                </div>
+
+                <div>
+                    <label for="phoneNumber">Phone Number: </label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" />
+                </div>
+
+
+                <div id="target">
+                    Drag file here.
+                </div>
+                <table id="filesTable">
+                    <thead>
+                        <tr id="headerRow">
+                            <th> Name </th>
+                            <th> Type </th>
+                            <th> Size </th>
+                            <th> Download </th>
+                        </tr>
+                    </thead>
+                </table>
+
+
+                <div class="buttons">
+                    <button id="btnSave" name="save">Save</button>
+                </div>
+
+            </div>
+
+            <table id="contacts">
+                <thead>
+                    <tr id="headerRow">
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Edit/Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
